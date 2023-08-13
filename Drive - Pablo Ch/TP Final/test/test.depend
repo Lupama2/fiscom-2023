@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1638385299 source:g:\mi unidad\pablo chehade\instituto balseiro (ib)\introducción a física computacional - fiscom\trabajos prácticos\tp final\test\main.cpp
+	<iostream>
+	<iomanip>
+	<complex>
+	<cmath>
+

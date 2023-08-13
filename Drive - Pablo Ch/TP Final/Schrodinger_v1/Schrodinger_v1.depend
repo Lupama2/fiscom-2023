@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1638989722 source:g:\mi unidad\pablo chehade\instituto balseiro (ib)\introducción a física computacional - fiscom\trabajos prácticos\tp final\schrodinger_v1\main.cpp
+	<iostream>
+	<iomanip>
+	<complex>
+	<cmath>
+	<iostream>
+	<iostream>
+	<fstream>
+

@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1636502898 source:g:\mi unidad\pablo chehade\instituto balseiro (ib)\introducción a física computacional - fiscom\trabajos prácticos\tp 05\ejercicio1_tp5\main.cpp
+	<iostream>
+	<iostream>
+	<fstream>
+	<cmath>
+	<cstdlib>
+	<array>
+	<vector>
+	<algorithm>
+	<cassert>
+	<time.h>
+	<typeinfo>
+

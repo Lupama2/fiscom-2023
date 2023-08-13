@@ -1,0 +1,59 @@
+In[5]:=
+Ejercicio 2 - TP 01
+
+Aplicación del método de Euler a las ec. de movimiento del oscilador armónico con condiciones iniciales dadas.
+
+In[249]:= (*Defino la función para calcular x_j+1 y p_j+1 usando x_j y p_j*)
+
+paso[x_,p_,h_]:={x + h p, p - h x} 
+
+(*Datos del problema*)
+
+tmax = 31;
+
+x0 = 1;
+
+p0 = 1;
+
+(*Inicializo las listas*)
+
+x = {x0};
+
+p = {p0};
+
+(*Calculo con un lazo toda la lista: calculo el elemento actual usando el dato del paso previo*)
+
+h = 0.1;
+
+jmax  = tmax/h;
+
+Do[
+
+{xnew, pnew} = paso[x[[j-1]],p[[j-1]],h]; (*evalúo x_j+1 y p_j+1*)
+
+x = Append[x,xnew]; p = Append[p,pnew];
+
+,{j,2,jmax}]
+
+(*Grafico en función del índice de iteración*)
+
+ListLinePlot[{x,p}]
+
+(*Grafico en el espacio de fases*)
+
+ListLinePlot[Transpose[{x,p}]]
+
+Out[258]= 
+
+Out[259]= 
+Out[5]= 2 Ejercicio-TP
+During evaluation of In[5]:= SetDelayed::write: Tag Times in a Aplicación armónico con condiciones de del del Euler iniciales las método movimiento oscilador dadas.In[249] ec.de is Protected.
+Out[7]= $Failed
+During evaluation of In[5]:= Set::shape: Lists {xnew,pnew} and paso[1,1,0.1] are not the same shape.
+During evaluation of In[5]:= Set::shape: Lists {xnew,pnew} and paso[xnew,pnew,0.1] are not the same shape.
+During evaluation of In[5]:= Set::shape: Lists {xnew,pnew} and paso[xnew,pnew,0.1] are not the same shape.
+During evaluation of In[5]:= General::stop: Further output of Set::shape will be suppressed during this calculation.
+Out[33]= 
+Out[37]= 
+During evaluation of In[5]:=
+Syntax::sntxi: Incomplete expression; more input is needed .
